@@ -1,0 +1,75 @@
+---------------------------------------------------------------------------------------------------------Vowel and consonant Program:-------------------------------------------------------------------------------------------------------------------------------
+import java.util.*; 
+class A9{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the character");
+		char ch1=sc.next().charAt(0);
+		System.out.println(ch1);
+		String ch2=""+ch1;
+		char ch=ch2.toUpperCase().charAt(0);
+		if(ch =='A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ){
+			System.out.println("It's Vowel");
+		}else{
+			System.out.println("It's Consonant");
+		}
+                                           System.out.println((int)ch1);//ASCII Value
+	}
+}
+---------------------------------------------------------------------------------------------------------Print A to Z Alphabets--------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+class A10{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		 for(int i=0;i<=25;i++){
+			 char ch=(char)(i+65);
+			 System.out.print(ch+" ");
+		 }
+		 System.out.println();
+		 for( char i='A' ; i<='Z' ;i++){
+			 System.out.print(i+" ");
+		 }
+	}
+}
+----------------------------------------------------------------------------------------------------------Ternary Operator------------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+class A11{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of A: ");
+		int a=sc.nextInt();
+		System.out.println("Enter the value of B: ");
+		int b=sc.nextInt();
+		String s=(a>b) ? "a is greater value" : "b is Greater  value ";
+		System.out.println(s);
+	}
+}
+-----------------------------------------------------------------------------------------------------------------Three greatest Number----------------------------------------------------------------------------------------------------------------------------------- 
+import java.util.*;
+class A13{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of A: ");
+		int a=sc.nextInt();
+		System.out.println("Enter the value of B: ");
+		int b=sc.nextInt();
+		System.out.println("Enter the value of c: ");
+		int c=sc.nextInt();
+		if(a>b){
+			if(a>c){
+				System.out.println(a);
+			}else{
+				System.out.println(c);
+			}
+		}else{
+			if(b>c){
+				System.out.println(b);
+			}else{
+				System.out.println(c);
+			}
+		}
+		int res=(a>b)?(a>c)? a:c:(b>c)?b:c;
+		System.out.println(res);
+	}
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
